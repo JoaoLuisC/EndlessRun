@@ -1,0 +1,62 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Imagens/Fundo/base_nova.png" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 13.0069, 8.35088 )
+
+[node name="TilePlataforma" type="Node2D"]
+
+[node name="LeftTile" type="Sprite" parent="."]
+position = Vector2( 16, 8 )
+scale = Vector2( 0.943038, 0.838235 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 4.489, 1.119, 26, 21.509 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="LeftTile"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LeftTile/StaticBody2D"]
+modulate = Color( 0.815686, 0.890196, 0.819608, 1 )
+position = Vector2( 0.144476, 2.38597 )
+scale = Vector2( 0.999999, 1 )
+shape = SubResource( 1 )
+
+[node name="center" type="Sprite" parent="."]
+position = Vector2( 42.1297, 8 )
+scale = Vector2( 0.933057, 0.838235 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 30.489, 1.119, 26, 21.509 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="center"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="center/StaticBody2D"]
+modulate = Color( 0.815686, 0.890196, 0.819608, 1 )
+position = Vector2( 0.00688934, 2.38597 )
+scale = Vector2( 0.999999, 1 )
+shape = SubResource( 1 )
+
+[node name="RightTile" type="Sprite" parent="."]
+position = Vector2( 68, 8 )
+scale = Vector2( 0.933057, 0.838235 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 56.489, 1.119, 26.047, 21.509 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="RightTile"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RightTile/StaticBody2D"]
+modulate = Color( 0.815686, 0.890196, 0.819608, 1 )
+position = Vector2( 0.00688934, 2.38597 )
+scale = Vector2( 0.999999, 1 )
+shape = SubResource( 1 )

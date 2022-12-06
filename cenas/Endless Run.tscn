@@ -1,0 +1,39 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://cenas/PlanodeFundo.tscn" type="PackedScene" id=1]
+[ext_resource path="res://cenas/Personagem.tscn" type="PackedScene" id=2]
+[ext_resource path="res://cenas/Hud.tscn" type="PackedScene" id=3]
+[ext_resource path="res://cenas/spawner 2.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scripts/Jogo.gd" type="Script" id=5]
+[ext_resource path="res://Sons/MusicaHub.mp3" type="AudioStream" id=6]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 383.25, 45.5 )
+
+[node name="Jogo" type="Node2D"]
+script = ExtResource( 5 )
+
+[node name="PlanodeFundo" parent="." instance=ExtResource( 1 )]
+
+[node name="Personagem" parent="." instance=ExtResource( 2 )]
+position = Vector2( 213, 307 )
+
+[node name="spawner 2" parent="." instance=ExtResource( 4 )]
+
+[node name="Hud" parent="." instance=ExtResource( 3 )]
+
+[node name="GameOverArea" type="Area2D" parent="."]
+position = Vector2( -3, -3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameOverArea"]
+position = Vector2( 385.75, 513 )
+shape = SubResource( 1 )
+
+[node name="AudioJogo" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+volume_db = -20.0
+
+[connection signal="body_entered" from="GameOverArea" to="." method="_on_GameOverArea_body_entered"]

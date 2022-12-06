@@ -1,0 +1,210 @@
+[gd_scene load_steps=24 format=2]
+
+[ext_resource path="res://Sons/MusicaGameOver.mp3" type="AudioStream" id=1]
+[ext_resource path="res://Imagens/Fundo/Wasteland_Sky.png" type="Texture" id=2]
+[ext_resource path="res://Imagens/Fundo/Wasteland_Mountains_2.png" type="Texture" id=3]
+[ext_resource path="res://Imagens/Fundo/Wasteland_Mountains_1.png" type="Texture" id=4]
+[ext_resource path="res://Imagens/Pergaminhos/PergaminhoMenu.png" type="Texture" id=5]
+[ext_resource path="res://Imagens/Pergaminhos/PergaminhoTitle.png" type="Texture" id=6]
+[ext_resource path="res://Imagens/Pergaminhos/PergaminhoConfigs.png" type="Texture" id=7]
+[ext_resource path="res://scripts/UICreditos.gd" type="Script" id=8]
+[ext_resource path="res://Fontes/lady_radical/Lady Radical.ttf" type="DynamicFontData" id=9]
+[ext_resource path="res://Fontes/sh-pinscher/SHPinscher-Regular.otf" type="DynamicFontData" id=10]
+
+[sub_resource type="DynamicFont" id=1]
+size = 53
+font_data = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 32
+font_data = ExtResource( 9 )
+
+[sub_resource type="StyleBoxEmpty" id=3]
+
+[sub_resource type="StyleBoxEmpty" id=4]
+
+[sub_resource type="StyleBoxEmpty" id=5]
+
+[sub_resource type="StyleBoxEmpty" id=6]
+
+[sub_resource type="StyleBoxEmpty" id=7]
+
+[sub_resource type="DynamicFont" id=8]
+size = 21
+outline_color = Color( 0.411765, 0.364706, 0.164706, 1 )
+font_data = ExtResource( 9 )
+
+[sub_resource type="StyleBoxEmpty" id=9]
+
+[sub_resource type="DynamicFont" id=10]
+size = 22
+font_data = ExtResource( 10 )
+
+[sub_resource type="DynamicFont" id=11]
+size = 22
+font_data = ExtResource( 10 )
+
+[sub_resource type="DynamicFont" id=12]
+size = 22
+font_data = ExtResource( 10 )
+
+[sub_resource type="DynamicFont" id=13]
+size = 22
+font_data = ExtResource( 10 )
+
+[node name="Creditos" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 765, 184 )
+script = ExtResource( 8 )
+
+[node name="PlanoDeFundo1" type="Sprite" parent="."]
+scale = Vector2( 1.873, 2.117 )
+texture = ExtResource( 2 )
+centered = false
+
+[node name="PlanoDeFundo2" type="Sprite" parent="."]
+scale = Vector2( 1.873, 2.117 )
+texture = ExtResource( 4 )
+centered = false
+
+[node name="PlanoDeFundo3" type="Sprite" parent="."]
+scale = Vector2( 1.873, 2.117 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="PergaminhoCreditos" type="Sprite" parent="."]
+position = Vector2( 134.8, 62.9 )
+scale = Vector2( 0.6, 0.6 )
+texture = ExtResource( 6 )
+
+[node name="LabelCreditos" type="Label" parent="PergaminhoCreditos"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -105.0
+margin_top = -119.5
+margin_right = -330.0
+margin_bottom = -48.5
+rect_pivot_offset = Vector2( 117, 335 )
+custom_colors/font_color = Color( 0.411765, 0.364706, 0.164706, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Creditos"
+
+[node name="PergaminhoVoltar" type="Sprite" parent="."]
+position = Vector2( 624.5, 401.25 )
+scale = Vector2( 0.706058, 1.67592 )
+texture = ExtResource( 5 )
+
+[node name="ButtonVoltar" type="Button" parent="PergaminhoVoltar"]
+margin_left = -150.838
+margin_top = -15.0664
+margin_right = 148.162
+margin_bottom = 31.9336
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_focus = Color( 0.411765, 0.364706, 0.164706, 1 )
+custom_colors/font_color = Color( 0.411765, 0.364706, 0.164706, 1 )
+custom_colors/font_color_hover = Color( 0.411765, 0.364706, 0.164706, 1 )
+custom_colors/font_color_pressed = Color( 0.411765, 0.364706, 0.164706, 1 )
+custom_fonts/font = SubResource( 2 )
+custom_styles/hover = SubResource( 3 )
+custom_styles/pressed = SubResource( 4 )
+custom_styles/focus = SubResource( 5 )
+custom_styles/disabled = SubResource( 6 )
+custom_styles/normal = SubResource( 7 )
+text = "V o l t a r"
+
+[node name="BackgroundCreditos" type="Sprite" parent="."]
+position = Vector2( 384, 237.5 )
+scale = Vector2( 1.10108, 0.897436 )
+texture = ExtResource( 7 )
+
+[node name="LabelBackGround" type="Label" parent="BackgroundCreditos"]
+margin_left = -180.732
+margin_top = -95.2714
+margin_right = -78.7317
+margin_bottom = -57.2714
+custom_colors/font_color = Color( 0.411765, 0.364706, 0.164706, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+custom_styles/normal = SubResource( 9 )
+text = "Background"
+
+[node name="textBackGround" type="Label" parent="BackgroundCreditos"]
+margin_left = -173.466
+margin_top = -59.6143
+margin_right = -103.466
+margin_bottom = -22.6143
+custom_fonts/font = SubResource( 10 )
+text = "Ansimuz
+Quintino Pixels
+"
+
+[node name="LabelUIdesign" type="Label" parent="BackgroundCreditos"]
+margin_left = 51.7669
+margin_top = -95.2714
+margin_right = 153.767
+margin_bottom = -57.2714
+custom_colors/font_color = Color( 0.411765, 0.364706, 0.164706, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+custom_styles/normal = SubResource( 9 )
+text = "UI  Design"
+
+[node name="textUIDesign" type="Label" parent="BackgroundCreditos"]
+margin_left = 51.7674
+margin_top = -50.7
+margin_right = 141.767
+margin_bottom = -22.7
+custom_fonts/font = SubResource( 11 )
+text = "Sasquatchii"
+
+[node name="LabelRen\'py" type="Label" parent="BackgroundCreditos"]
+margin_left = -174.375
+margin_top = 19.5
+margin_right = -72.3743
+margin_bottom = 57.5
+custom_colors/font_color = Color( 0.411765, 0.364706, 0.164706, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+custom_styles/normal = SubResource( 9 )
+text = "Ren'Py"
+
+[node name="LabelRen\'py2" type="Label" parent="BackgroundCreditos"]
+margin_left = 44.5018
+margin_top = 19.5
+margin_right = 149.502
+margin_bottom = 57.5
+custom_colors/font_color = Color( 0.411765, 0.364706, 0.164706, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+custom_styles/normal = SubResource( 9 )
+text = "Art  Assets"
+
+[node name="textRen\'Py" type="Label" parent="BackgroundCreditos"]
+margin_left = -173.466
+margin_top = 65.1858
+margin_right = -83.4661
+margin_bottom = 93.1858
+custom_fonts/font = SubResource( 12 )
+text = "PyTom"
+
+[node name="textlArtAssets" type="Label" parent="BackgroundCreditos"]
+margin_left = 37.2361
+margin_top = 65.1857
+margin_right = 178.236
+margin_bottom = 93.1857
+custom_fonts/font = SubResource( 13 )
+text = "Open Pixel Project"
+
+[node name="AudioCreditos" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )
+volume_db = -40.0
+
+[connection signal="pressed" from="PergaminhoVoltar/ButtonVoltar" to="." method="_on_ButtonVoltar_pressed"]
