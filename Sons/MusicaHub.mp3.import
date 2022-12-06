@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/MusicaHub.mp3-e176f238eb475d832020fcaa9ccd7e89.mp3str"
+
+[deps]
+
+source_file="res://Sons/MusicaHub.mp3"
+dest_files=[ "res://.import/MusicaHub.mp3-e176f238eb475d832020fcaa9ccd7e89.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
