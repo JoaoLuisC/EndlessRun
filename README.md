@@ -30,6 +30,17 @@
     </ul>
 </p>
 
+<h1><b>Jogo</b></h1>
+
+<img src="https://github.com/JoaoLuisC/EndlessRun/assets/103074041/e50fae78-ec3b-4a3a-8ebd-f05b8f0bcb2e" alt="Ícone do Curso" width="600"/>
+<br>
+<br>
+<img src="https://github.com/JoaoLuisC/EndlessRun/assets/103074041/8de0c91a-fc69-4ab7-8919-eb3f1b7d4efe" alt="Ícone do Curso" width="600"/>
+<br>
+<br>
+<img src="https://github.com/JoaoLuisC/EndlessRun/assets/103074041/1869be9d-9307-4ced-9ca4-6232dd8f1703" alt="Ícone do Curso" width="600"/>
+
+
 <h1><b>Créditos</b></h1>
 <p>Os seguintes recursos foram utilizados na criação deste jogo:</p>
 <br>
