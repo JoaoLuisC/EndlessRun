@@ -1,5 +1,5 @@
 <h1 align="center"><b>Journey Run</b></h1>
-<p align="center">Durante o segundo período da graduação, foi desenvolvido um jogo de plataforma utilizando a engine GODOT..</p> 
+<p align="center">Durante o segundo período da graduação, foi desenvolvido um jogo de plataforma utilizando a engine GODOT.</p> 
 <br>
 
 <h1><b>Descrição</b></h1>
