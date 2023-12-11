@@ -16,7 +16,7 @@
 
 <h1><b>Instalação</b></h1>
 <p>
-    <p>Para jogar o jogo, é necessário baixar e instalar o Godot Engine. Você pode fazer o download gratuito do Godot Engine em [https://godotengine.org/download/].</p>
+    <p>Para jogar o jogo, é necessário baixar e instalar o Godot Engine na Versão 3. Você pode fazer o download gratuito do Godot Engine em [https://godotengine.org/download/].</p>
     <hr>
     <p>Depois de baixar e instalar o Godot Engine, siga as etapas abaixo:</p>
     <hr>
